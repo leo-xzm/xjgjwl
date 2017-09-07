@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="POSApplication.BLL.GoodsBLL" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BLL\GoodsBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSApplication.BLL.StaffBLL" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>BLL\StaffBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSApplication.DataAccess" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAICAEEAAABAEAABAAAAECAAAAAAAIIAAAAAAAAAAA=</HashCode>
+      <FileName>Common\DataAccess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSApplication.Log" Collapsed="true">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAEAAAAAAAEAAgAgAAAAAAAAAAAAACAEAADQ=</HashCode>
+      <FileName>Common\Log.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSApplication.Program" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSApplication.frmLogIn" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkAQBQAIACBAIAAAAACgIAAKIggQIAkAAQSRIAAAQAQ=</HashCode>
+      <FileName>UI\frmLogIn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSApplication.MiniKeyboard" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAIAACAACAAAAACAAAACAAEIAAACQAAAAAAw8A8=</HashCode>
+      <FileName>UserController\MiniKeyboard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSApplication.MiniKeyboardArgs" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>UserController\MiniKeyboard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSApplication.Common.ORM&lt;ItemType&gt;" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEQgAAgAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Common\ORM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSApplication.Common.ColumnAttributes" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEIAAAAABAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\ORM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSApplication.Common.TableAttributes" Collapsed="true">
+    <Position X="2.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\ORM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSApplication.DAL.GoodsDAL" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\GoodsDAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSApplication.DAL.StaffDAL" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>DAL\StaffDAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSApplication.Model.Discount" Collapsed="true">
+    <Position X="1.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIgAAAAAAAAAAAAAAAAAAAAAEAAoAAgAAA=</HashCode>
+      <FileName>Model\Discount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSApplication.Model.Goods" Collapsed="true">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAiAAAAAAAAAAAAKQBBCgAAABAAAAAAAAQQAAAJA=</HashCode>
+      <FileName>Model\Goods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSApplication.Model.Sales" Collapsed="true">
+    <Position X="3.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>pAAI0AEAAAQAAAAAIAACCMAFAIAAAAEAABAAAMAAAAY=</HashCode>
+      <FileName>Model\Sales.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSApplication.Model.Staff" Collapsed="true">
+    <Position X="7.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAAAAAAAAAAAAAAAAAAAAAAAAEAQAYAAgAAAAQ=</HashCode>
+      <FileName>Model\Staff.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSApplication.Properties.Resources" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSApplication.Properties.Settings" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAQAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSApplication.UI.frmMain" Collapsed="true">
+    <Position X="7.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgQAAQAChCAAAAAAAACAIJACAAQoICAAAACAAAAAEAA=</HashCode>
+      <FileName>UI\frmMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSApplication.UI.frmSell" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAQAQCJECAAQRBAAACAIAAKAgBIAAIAAACQAQQAAAQ=</HashCode>
+      <FileName>UI\frmSell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSApplication.UserController.bottomBar" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAABCAAAAACAACAIIACAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserController\bottomBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POSApplication.Model.OrderItem" Collapsed="true">
+    <Position X="5.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAAAAAAAAAAAAAAAIAACAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\OrderItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

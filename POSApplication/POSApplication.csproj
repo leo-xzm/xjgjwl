@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0BF37B98-9596-472D-B5DA-4D94DA0E9DB9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POSApplication</RootNamespace>
+    <AssemblyName>POSApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Projects\POS\setup\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>\\servergg\pos\update\</UpdateUrl>
+    <ProductName>POS系统</ProductName>
+    <PublisherName>Sunkinux</PublisherName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>\\192.168.1.170\pos\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>AD8D9CC277A5228E032EF3FFE4DE7FD01C3A5501</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>POSApplication_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\CardBLL.cs" />
+    <Compile Include="BLL\DiscountBLL.cs" />
+    <Compile Include="Common\CardTran.cs" />
+    <Compile Include="Common\CustomerDisplayData.cs" />
+    <Compile Include="Common\CustomerDisplayerX80.cs" />
+    <Compile Include="Common\DataUpload.cs" />
+    <Compile Include="Common\ICustomerDisplayer.cs" />
+    <Compile Include="Common\ObjFactory.cs" />
+    <Compile Include="DAL\DiscountDAL.cs" />
+    <Compile Include="BLL\GoodsBLL.cs" />
+    <Compile Include="BLL\PromotionBLL.cs" />
+    <Compile Include="BLL\SalesBLL.cs" />
+    <Compile Include="BLL\StaffBLL.cs" />
+    <Compile Include="Common\AccessDBF.cs" />
+    <Compile Include="Common\CheckPayCash.cs" />
+    <Compile Include="Common\ConfigHelper.cs" />
+    <Compile Include="Common\CustomerDisplay.cs" />
+    <Compile Include="Common\DataAccess.cs" />
+    <Compile Include="Common\DataOperator.cs" />
+    <Compile Include="Common\Log.cs" />
+    <Compile Include="Common\mcard\mifareone.cs" />
+    <Compile Include="Common\mcard\MwrfRead.cs" />
+    <Compile Include="Common\ObjectCopier.cs" />
+    <Compile Include="Common\ORM.cs" />
+    <Compile Include="Common\InputValidate.cs" />
+    <Compile Include="Common\Print.cs" />
+    <Compile Include="Common\mcard\MwrfCommon.cs" />
+    <Compile Include="Common\SysOperate.cs" />
+    <Compile Include="DAL\CardDAL.cs" />
+    <Compile Include="DAL\SalesDAL.cs" />
+    <Compile Include="DAL\GoodsDAL.cs" />
+    <Compile Include="DAL\PromotionDAL.cs" />
+    <Compile Include="DAL\StaffDAL.cs" />
+    <Compile Include="GlobalParams.cs" />
+    <Compile Include="Model\Card.cs" />
+    <Compile Include="Model\Discount.cs" />
+    <Compile Include="Model\Goods.cs" />
+    <Compile Include="Model\OrderHandle.cs" />
+    <Compile Include="Model\OrderItemForSales.cs" />
+    <Compile Include="Model\PayedCard.cs" />
+    <Compile Include="Model\Promotion.cs" />
+    <Compile Include="Model\Receipt.cs" />
+    <Compile Include="Model\Sales.cs" />
+    <Compile Include="Model\OrderItem.cs" />
+    <Compile Include="UI\frmCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmCash.Designer.cs">
+      <DependentUpon>frmCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmConfig.Designer.cs">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmData.Designer.cs">
+      <DependentUpon>frmData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmLogIn.Designer.cs">
+      <DependentUpon>frmLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Staff.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPay.Designer.cs">
+      <DependentUpon>frmPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPayWay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPayWay.Designer.cs">
+      <DependentUpon>frmPayWay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmReceipt.Designer.cs">
+      <DependentUpon>frmReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmRecoverOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmRecoverOrder.Designer.cs">
+      <DependentUpon>frmRecoverOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmRefund.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmRefund.Designer.cs">
+      <DependentUpon>frmRefund.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmRefundPow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmRefundPow.Designer.cs">
+      <DependentUpon>frmRefundPow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmSell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmSell.Designer.cs">
+      <DependentUpon>frmSell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserController\CardBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController\CardBox.Designer.cs">
+      <DependentUpon>CardBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserController\GoodsFrame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController\GoodsFrame.Designer.cs">
+      <DependentUpon>GoodsFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserController\InputBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController\InputBox.Designer.cs">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserController\MCardPay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController\MCardPay.Designer.cs">
+      <DependentUpon>MCardPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserController\MiniKeyboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController\MiniKeyboard.Designer.cs">
+      <DependentUpon>MiniKeyboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserController\BottomBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController\BottomBar.Designer.cs">
+      <DependentUpon>BottomBar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\frmCash.resx">
+      <DependentUpon>frmCash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmConfig.resx">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmData.resx">
+      <DependentUpon>frmData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmLogIn.resx">
+      <DependentUpon>frmLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPay.resx">
+      <DependentUpon>frmPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPayWay.resx">
+      <DependentUpon>frmPayWay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmReceipt.resx">
+      <DependentUpon>frmReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmRecoverOrder.resx">
+      <DependentUpon>frmRecoverOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmRefund.resx">
+      <DependentUpon>frmRefund.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmRefundPow.resx">
+      <DependentUpon>frmRefundPow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmSell.resx">
+      <DependentUpon>frmSell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController\CardBox.resx">
+      <DependentUpon>CardBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController\GoodsFrame.resx">
+      <DependentUpon>GoodsFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController\InputBox.resx">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController\MCardPay.resx">
+      <DependentUpon>MCardPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController\MiniKeyboard.resx">
+      <DependentUpon>MiniKeyboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController\BottomBar.resx">
+      <DependentUpon>BottomBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsxb.dbf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="类图.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="mwrf32.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
